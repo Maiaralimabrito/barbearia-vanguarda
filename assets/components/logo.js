@@ -1,22 +1,25 @@
-import { LitElement,css } from 'lit';
+import { LitElement, css } from "lit";
 
 export class Logo extends LitElement {
-    static styles = [
-        css`
-            :host {
-                width: 48px;
-                height: 48px;
+  static styles = [
+    css`
+      :host {
+        width: 48px;
+        height: 48px;
 
-                background-color: black;
-              -webkit-mask:url('../../images/Logo.svg') no-repeat center;
-                mask:url('../../images/Logo.svg') no-repeat center;
+        background-color: black;
 
-            -webkit-mask-size: 100%;
-             mask-size:100%;
+        -webkit-mask: url('logo.svg') no-repeat center;
+        mask: url('logo.svg') no-repeat center;
+        
 
-                display: block;
-            }
-        `,
-    ];
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+
+         display: block;
+        
+      }
+    `,
+  ];
 }
-customElements.define('app-logo', Logo);
+customElements.define("app-logo", Logo);

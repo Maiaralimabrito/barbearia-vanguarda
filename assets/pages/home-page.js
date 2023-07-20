@@ -10,7 +10,7 @@ export class HomePage extends LitElement {
     ];
 
     render() {
-        return html`<p>Barbearia-vanguarda</p>`;
+        return html`<p>Barbearia Vanguarda</p>`;
     }
 }
 customElements.define('app-home-page', HomePage);
